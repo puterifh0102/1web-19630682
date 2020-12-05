@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>silahkan isi data dibawah ini dengan benar</h1>
+    <form action="proses.php" method="GET">
+    <label> nama: </label>
+    <input type="text" name="nama" placeholder="ketikkan nama anda">
+    <br>
+    <label> password: </label>
+    <input type="password" name="password"placeholder= "ketikkan password">
+    <br>
+    <label> jenis kelamin: </label>
+    <input type="radio" name="jen_kel" value="L"laki-laki>
+    <input type="radio" name="jen_kel" value="P"perempuan>
+    <br>
+    <label> hobi: </label>
+    <input type="checkbox" name="hobi1"> gowes
+    <input type="checkbox" name="hobi2"> memancing
+    <input type="checkbox" name="hobi3"> mengkoding
+    <br>
+    <label> tempat lahir: </label>
+    <select name="tempat_lahir">
+        <option value=""></option>
+        <option value="bjm"> Banjarmasin</option>
+        <option value="bjb"> Banjarbaru </option>
+        <option value="mtp"> martapura </option>
+    </select>
+    <label> tanggal lahir: </label>
+    <input type="date" name="tgl_lahir">    
+    <br>
+    <label> Keterangan: </label>
+    <textarea name="keterangan" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit" value="kirim data">
+    </form>
+</body>
+</html>

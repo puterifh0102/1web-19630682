@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulir pendaftaran</title>
+</head>
+<body>
+    <h1>silahkan isi data dibawah ini denganbenar:</h1>
+    <form action="proses.php" method="get">
+        <label>nama: </label>
+        <input type="text" name="nama" placeholder="ketikkan nama anda">
+        <br>
+        <label>password: </label>
+        <input type="password" name="password" placeholder="ketikkan password anda">
+        <br>
+        <label>jenis kelamin: </label>
+        <input type="radio" name="jen_kel" value="L">LAKI LAKI
+        <input type="radio" name="jen_kel" value="P">PEREMPUAN
+        <br>
+        <LABEL>hobi: </LABEL>
+        <input type="checkbox" name="hobi1">gowes
+        <input type="checkbox" name="hobi2">memancing
+        <input type="checkbox" name="hobi3">mengkoding
+        <br>
+        <label>tempat lahir: </label>
+        <select name="tmpat_lahir">
+            <option value=""></option>
+            <option value="bjm">banjarmasin</option>
+            <option value="bjb">banjarbaru</option>
+            <option value="mtp">martapura</option>
+        </select>
+        <br>
+        <label>tanggal lahir: </label>
+        <input type="date" name="tanggal_lahir">
+        <br>
+        <label>keterangan: </label>
+        <textarea name="keterangan" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="KIRIM DATA">
+    </form>
+</body>
+</html>
